@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>Git and GitHub</header>
+  </body>
+  <main>
+    <h2>Git</h2>
+    <p>
+      <strong>Git</strong> is a distributed version control system used
+      primarily for managing and tracking changes in source code during software
+      development. It allows multiple developers to collaborate on a project
+      simultaneously and keeps track of all changes made to the codebase over
+      tiem.
+    </p>
+    <p>Here's a breakdown of how Git works and how to use it:</p>
+    <ol>
+      <li>
+        <strong>Repository:</strong> A Git repository is essentially a folder
+        that contains all the files and folders for your project, along with the
+        version history of those files.
+      </li>
+      <li>
+        <strong>Commits:</strong> A commit is a snapshot of the changes you've
+        made to your files at a particular point in time. Each commit has a
+        unique identifier and a commit message describing the changes made.
+      </li>
+      <li>
+        <strong>Branches:</strong> Branches in Git allow you to work od
+        different features or fixes in isolation from each other. YOu can create
+        a new branch from an existing one, make changes, and then merge those
+        changes back into the main branch.
+      </li>
+      <li>
+        <strong>Merge:</strong> Merging is the process of combining the changes
+        from one branch into another. This is typically done when you've
+        finished working on a feature branch and want to incorporate thos
+        changes into the main branch.
+      </li>
+      <li>
+        <strong>Pull request:</strong> In Git-based collaboration workflows like
+        GitHub, a <strong>pull request</strong> is a way to propose changes to a
+        repository. It allows other developers to review your code, provide
+        feedback, and ultimately merge your changes into the main branch.
+      </li>
+    </ol>
+
+    <p>
+      To commit your changes to your GitHub repository from your local machine,
+      you'll typically follow these steps using Git commands:
+    </p>
+
+    <ol>
+      <li>
+        <strong>Add files to staging area:</strong> First, you need to add the
+        files you want to commit to the staging area. You can do this using the
+        <strong>git add</strong> command followed by the file names or a dot (.)
+        to add all files in the current directory.
+
+        <pre>
+      <code>
+        git add &lt;file1&gt; &lt;file2&gt; ...
+          # or
+          git add .
+          
+      </code>
+    </pre>
+      </li>
+      <li>
+        <strong>Commit changes:</strong> Once the files are staged, you can
+        commit them to your local repository along with a commit message using
+        the <strong>'git commit'</strong> command:
+        <pre>
+    <code>
+      git commit -m 'Your commit message here'
+    </code>
+  </pre>
+        Replace 'Your commit message here' with a brief, decsriptive message
+        summarizing the changes you made in this commit.
+      </li>
+      <li>
+        <strong>Push changes to GitHub:</strong> Finally, you'll push your
+        commited changes from your local repository to your GitHub repository
+        using the <strong>'git push'</strong> command.
+        <pre>
+    <code>
+      git push origin main
+    </code>
+  </pre>
+      </li>
+    </ol>
+
+    <p>
+      This sequence adds all changes in your current directory to the staging
+      area, commits those changes with a commit message, and then pushes those
+      changes to the <strong>'main'</strong> branch of your GitHub repository.
+      Make sure to replace <strong>'main'</strong> with the actual branch name
+      if you're working on a different branch.
+    </p>
+  </main>
+</html>
