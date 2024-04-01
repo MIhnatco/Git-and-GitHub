@@ -86,6 +86,35 @@
           Replace 'Your commit message here' with a brief, decsriptive message
           summarizing the changes you made in this commit.
         </li>
+
+        <li>
+          You can use the <strong>'git status'</strong> command to see the
+          changes you've made to your files that are not yet staged for commit:
+          <ol>
+            <li>Open Command Prompt</li>
+            <li>
+              Navigate to the directory where your changed file is located using
+              the 'cd' command
+            </li>
+            <li>
+              Once you are in the directory, type the following command and
+              press Enter
+              <code>
+                <pre>
+        git status
+      </pre
+                >
+              </code>
+              This command will show you the status of your working directory and staging area. It will display 
+              which files have been modified, which files are staged for commit, and which files are untracked. <br>
+              Additionally, <strong>'git status'</strong> will provide instructions on how to stage or discard changes based 
+              on its output. <br>
+              By using <strong>'git status'</strong> , you can get a clear overview of the changes you've made and decide how to proceed 
+              with committing them to your repository.
+            </li>
+          </ol>
+        </li>
+
         <li>
           <strong>Push changes to GitHub:</strong> Finally, you'll push your
           commited changes from your local repository to your GitHub repository
