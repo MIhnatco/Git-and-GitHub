@@ -105,12 +105,16 @@
       </pre
                 >
               </code>
-              This command will show you the status of your working directory and staging area. It will display 
-              which files have been modified, which files are staged for commit, and which files are untracked. <br>
-              Additionally, <strong>'git status'</strong> will provide instructions on how to stage or discard changes based 
-              on its output. <br>
-              By using <strong>'git status'</strong> , you can get a clear overview of the changes you've made and decide how to proceed 
-              with committing them to your repository.
+              This command will show you the status of your working directory
+              and staging area. It will display which files have been modified,
+              which files are staged for commit, and which files are untracked.
+              <br />
+              Additionally, <strong>'git status'</strong> will provide
+              instructions on how to stage or discard changes based on its
+              output. <br />
+              By using <strong>'git status'</strong> , you can get a clear
+              overview of the changes you've made and decide how to proceed with
+              committing them to your repository.
             </li>
           </ol>
         </li>
@@ -133,6 +137,56 @@
         changes to the <strong>'main'</strong> branch of your GitHub repository.
         Make sure to replace <strong>'main'</strong> with the actual branch name
         if you're working on a different branch.
+      </p>
+
+      <p>
+        To update your GitHub repository with the changes you've made to your
+        local files, you'll need to follow these steps:
+      </p>
+      <ol>
+        <li>
+          <strong>Add files to the staging area:</strong> Use the
+          <strong>'git add'</strong> command to add the changes you've made to
+          your <strong>'index.html'</strong> file to the staging area. Navigate
+          to the directory containing your file in Command Prompt and execute:
+          <pre>
+  <code>
+    git add index.html
+  </code>
+</pre>
+          This command stages the <strong>'index.html'</strong> file for commit.
+        </li>
+        <li>
+          <strong>Commit changes:</strong> Once the file is staged, you can
+          commit the changes to your local repository with a commit message
+          using the <strong>'git commit'</strong> command:
+          <pre>
+    <code>
+      git commit -m 'Updated index.html with new HTML tags'
+    </code>
+  </pre>
+          Replace 'Updated index. html wit new HTML tags' with a descriptive
+          commit message summarizing the changes you've made.
+        </li>
+        <li>
+          <strong>Push changes to GitHub:</strong> Finally, you'll push the
+          committed changes from your local repository to your GitHub repository
+          using the <strong>'git push'</strong> command:
+          <pre>
+      <code>
+        git push origin main
+      </code>
+    </pre>
+          This command pushes the changes to the <strong>'main'</strong> branch
+          of your GitHub repository. If you're working on a different branch,
+          replace <strong>'main'</strong> with the name of your branch.
+        </li>
+      </ol>
+
+      <p>
+        Now, your changes should be reflected in your GitHub repository. You can
+        verify this by visitin your repository on the GitHub website and
+        checking the contents of the <strong>index.html</strong> file.
       </p>
     </main>
   </body>
